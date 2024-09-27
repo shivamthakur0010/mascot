@@ -20,7 +20,7 @@ const Form = () => {
   return (
     <>
       <div className="container">
-        <div className="contactus-container container mt-5 ">
+        <div className="contactus-container container mt-3 ">
           {/* Form with onSubmit handler */}
           <form className="contactus-form-container" onSubmit={handleSubmit(onSubmit)}>
             <div className="row">

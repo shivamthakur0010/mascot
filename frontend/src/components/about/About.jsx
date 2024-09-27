@@ -49,7 +49,12 @@ function About() {
             Our mission is to provide a high-quality uniform garment and one-stop services to satisfy our client’s needs through a range of efficient, effective manufacturing activities and delivered on a holistic basis.
             </p>
           </div>
-          <div className="col-lg-4 col-md-4 p-2  bg-blue">
+          <div className="col-lg-4 col-md-4 p-4  bg-blue">
+            <div className="title title1 title-effect mb-1 title-left">
+            <h2 className="rubik f-22">PLEASE FILL THE FORM & CONTACT US FOR ANY QUERY, WILL GET BACK TO YOU!</h2>
+            </div>
+
+            <p className="text-muted f-14 mt-2 ">Your email address will not be published. Required fields are marked *</p>
             <Form/>
           </div>
         </div>

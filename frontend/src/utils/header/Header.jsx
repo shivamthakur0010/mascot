@@ -176,7 +176,7 @@ function Header() {
             <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
               About us
             </Nav.Link>
-            <Nav.Link href="#link" onClick={handleNavClick}>
+            <Nav.Link as={Link} to="/contact" onClick={handleNavClick}>
               Contact us
             </Nav.Link>
 
