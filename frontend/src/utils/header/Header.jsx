@@ -84,9 +84,9 @@ function Header() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#" onClick={handleNavClick}>
+                  <Link className="dropdown-item" to="/products" onClick={handleNavClick}>
                     HTML
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#" onClick={handleNavClick}>

@@ -1,0 +1,38 @@
+.product-box {
+    overflow: hidden;
+    box-shadow: 0 1px 30px hsl(0deg 100% 80% / 32%);
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    position: relative;
+}
+
+.product-image-container {
+    position: relative;
+    width: 100%; /* Adjust width as per your layout */
+    height: 350px; /* Set a consistent height for images */
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while keeping its aspect ratio */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.product-image.image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-box:hover .image2 {
+    opacity: 1;
+}
+
+.product-box:hover .image1 {
+    opacity: 0;
+}

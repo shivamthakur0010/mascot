@@ -177,3 +177,9 @@
 .css-nmluci-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
   color: var(--primary-color) !important;
 }
+
+/* ======= products = */
+.product-box:hover {
+  box-shadow: 0 1px 30px rgb(62 68 90 / 13%);
+  border-color: var(--primary-color);
+}

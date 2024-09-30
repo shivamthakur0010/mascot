@@ -6,6 +6,7 @@ import Contact from './components/contact/Contact.jsx';
 import Register from './account/register/Register.jsx';
 import Login from './account/login/Login.jsx';
 import Faq from './components/faq/Faq.jsx';
+import Products from './components/products/Products.jsx';
 function App() {
 
   return (
@@ -17,7 +18,7 @@ function App() {
     <Route path="/about"  element={<About/>} />
     <Route path="/contact"  element={<Contact/>} />
     <Route path="/faq"  element={<Faq/>} />
-
+    <Route path="/products"  element={<Products/>} />
 
 
 
