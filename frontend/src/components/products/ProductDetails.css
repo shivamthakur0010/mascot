@@ -1,0 +1,16 @@
+/* For the small images */
+.small-image {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: contain; /* Maintain aspect ratio, avoid stretching */
+    margin-bottom: 10px; /* Spacing between images */
+    border: 1px solid #ddd; /* Optional: Add border for aesthetics */
+  }
+  
+  /* For the large image */
+  .large-image {
+    width: 100%; /* Full width of the container */
+    height: 500px; /* Set a fixed height */
+    object-fit: contain; /* Maintain aspect ratio, avoid stretching */
+  }
+  

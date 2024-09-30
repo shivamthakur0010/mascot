@@ -42,6 +42,12 @@
 .f-22{
   font-size: 22px !important;
 }
+.f-24{
+  font-size: 24px !important;
+}
+.f-26{
+  font-size: 26px !important;
+}
 
 .bg-theme{
   background-color: var(--primary-color)
