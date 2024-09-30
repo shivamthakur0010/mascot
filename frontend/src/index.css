@@ -14,8 +14,8 @@
   box-sizing: border-box;
 }
 :root {
-  --primary-color: #ff9999; /* Define global primary color */
-  --hover-color: #232323;   /* Define global hover color */
+  --primary-color: #ff9999; 
+  --hover-color: #232323;   
   --text-color: #fff;  
   --secondary-color: #eff2f7;
 }
@@ -67,7 +67,10 @@
   background: var(--hover-color); 
   color: var(--text-color);  
 }
-
+.dropdown-item:active{
+  background-color: transparent !important;
+  color: #000;
+}
 .counter-icon{
   color: var(--primary-color); 
   font-size: 75px;
