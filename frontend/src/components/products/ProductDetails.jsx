@@ -1,7 +1,7 @@
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState , useRef  } from "react";
-import './ProductDetails.css'; // Import custom CSS
+import './ProductDetails.css'; 
 
 function ProductDetails() {
   const products = [
@@ -30,10 +30,11 @@ function ProductDetails() {
         "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
     },
   ];
-  const containerRef = useRef(null);
-  const imgRef = useRef(null);
   // State to track the selected image for the first product
   const [selectedImage, setSelectedImage] = useState(products[0].image1);
+  
+  const containerRef = useRef(null);
+  const imgRef = useRef(null);
   const handleMouseMove = (e) => {
     if (containerRef.current && imgRef.current) {
       const { left, top, width, height } =
