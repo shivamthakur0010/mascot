@@ -14,7 +14,7 @@ function ProductDetails() {
       image1:
         "https://www.uniformbucket.com/img/product/original/worsted-blazer-for-men_1.jpg",
       image2:
-        "https://www.uniformbucket.com/img/product/original/worsted-blazer-for-men_2.jpg",
+        "https://www.uniformbucket.com/img/product/thumb370x472/black-formal-blazer-for-men_2.jpg",
       image3:
         "https://www.uniformbucket.com/img/product/original/worsted-blazer-for-men_2.jpg",
     },
@@ -112,16 +112,10 @@ function ProductDetails() {
 
           {/* Right Side - Product Details */}
           <div className="col-lg-6 p-3">
-            <h2 className="rubik f-26">{products[0].name}</h2>
-            <h4 className=" fw-light  ">Rs. {products[0].price}</h4>
-            <p>{products[0].description}</p>
-            <button className="btn btn-primary btn-block">Add to Cart</button>
-            <Link
-              to={`/product/${products[0].id}`}
-              className="btn btn-secondary btn-block mt-2"
-            >
-              View Details
-            </Link>
+            <div className="detail-image-concept">
+              <h1>Black Formal Blazer For Men</h1>
+            </div>
+            <h3 className="price-details">₹2,513</h3>
           </div>
         </div>
       </div>
