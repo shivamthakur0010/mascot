@@ -5,15 +5,29 @@
     object-fit: contain; 
     margin-bottom: 10px; 
     border: 1px solid #ddd;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
   }
-  
+  .small-image:hover {
+    opacity: 0.8;
+  }
   /* For the large image */
   .large-image {
     width: 100%; 
     height: 500px;
     object-fit: contain;
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
   }
+/* Optional: Add smooth sliding animation */
+.fade-out {
+  opacity: 0;
+  transform: translateX(10px); /* Optional, gives a slide effect */
+}
 
+.fade-in {
+  opacity: 1;
+  transform: translateX(0); /* Back to original position */
+}
   /* for side page content */
   
   .detail-image-concept {
@@ -21,4 +35,15 @@
     color: #212529;
     font-weight: 400;
 
+  }
+
+  .blur-image {
+    filter: blur(2px); /* Adjust the blur radius */
+    opacity: 0.6; /* Optional, adds a dimming effect */
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .blur-image:hover {
+    filter: none; /* Remove blur on hover */
+    opacity: 1;
   }
