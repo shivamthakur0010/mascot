@@ -1,6 +1,6 @@
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useState , useRef  } from "react";
+import { useState , useRef , useEffect } from "react";
 import './ProductDetails.css'; 
 import { FaCartShopping } from "react-icons/fa6";
 
@@ -37,6 +37,9 @@ function ProductDetails() {
   ];
   // State to track the selected image for the first product
   const [selectedImage, setSelectedImage] = useState(products[0].image1);
+  const [currentIndex, setCurrentIndex] = useState(0); // Track the current index for auto-slideshow
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const images = [products[0].image1, products[0].image2, products[0].image3];
   
   const containerRef = useRef(null);
   const imgRef = useRef(null);
@@ -60,6 +63,21 @@ function ProductDetails() {
       imgRef.current.style.transformOrigin = "center center"; // Reset transform origin
     }
   };
+
+    // Auto-slide logic using useEffect to change the image automatically every 5 seconds
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Cycle through images
+      }, 3000); // 2 seconds interval
+  
+      return () => clearInterval(intervalId); // Clean up interval on component unmount
+    }, []);
+  
+    useEffect(() => {
+      setSelectedImage(images[currentIndex]); // Update the selected image based on currentIndex
+    }, [currentIndex, images]);
+
   return (
     <>
       <div className="container-fluid bg-breadcrum py-auto">
@@ -83,29 +101,25 @@ function ProductDetails() {
           <div className="col-lg-6 d-flex flex-wrap align-items-center">
             {/* Three smaller images */}
             <div className="d-flex flex-column w-25 align-items-center flex-wrap">
-              <img
-                src={products[0].image1}
-                alt={products[0].name}
-                className="img-fluid small-image"
-                onClick={() => setSelectedImage(products[0].image1)} // Set clicked image as the main image
-              />
-              <img
-                src={products[0].image2}
-                alt={products[0].name}
-                className="img-fluid small-image"
-                onClick={() => setSelectedImage(products[0].image2)} // Set clicked image as the main image
-              />
-              <img
-                src={products[0].image3}
-                alt={products[0].name}
-                className="img-fluid small-image"
-                onClick={() => setSelectedImage(products[0].image3)} // Set clicked image as the main image
-              />
+              {images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={products[0].name}
+                  className={`img-fluid small-image ${
+                    selectedImage === image ? "" : "blur-image"
+                  }`}
+                  onClick={() => setSelectedImage(image)}
+                />
+              ))}
             </div>
             {/* Larger main image */}
-            <div className="w-75 overflow-hidden"   ref={containerRef}
+            <div
+              className="w-75 overflow-hidden"
+              ref={containerRef}
               onMouseMove={handleMouseMove}
-              onMouseLeave={handleMouseLeave}>
+              onMouseLeave={handleMouseLeave}
+            >
               <img
                 src={selectedImage} // Display selected image here
                 alt={products[0].name}
