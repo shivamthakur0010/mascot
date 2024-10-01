@@ -33,5 +33,4 @@ function App() {
     </>
   )
 }
-// the  asdfasf
 export default App
