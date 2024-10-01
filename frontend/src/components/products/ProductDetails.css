@@ -16,9 +16,87 @@
 
   /* for side page content */
   
-  .detail-image-concept {
-    font-size: calc(20px +(25 - 20)*((100vw - 320px) /(1920 - 320)));
+  .detail-image-concept h1{
+    font-size: 35px;
+    color: #212529;
+    font-weight: 200;
+    line-height: 1.2em;
+  }
+
+  .price-details {
+    font-size: 26px;
     color: #212529;
     font-weight: 400;
-
+    margin: 15px 0;
   }
+
+.hr-line {
+  border: none;
+  border-top: 1px dotted #000;
+  margin: 20px 0;
+}
+
+
+.product-name {
+  font-weight: bolder;
+  text-align: left;
+  width: 100%;
+  max-width: 30%;
+  font-size: 15px;
+}
+
+.product-descr {
+  font-size: 15px;
+  width: 100%;
+  max-width: 50%;
+}
+
+.size-text h6{
+  font-size:20px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.product-size-btn button{
+    border: none;
+    /* margin-left: 15px; */
+    font-size: 15px;
+    width: 100%;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #eff2f7;
+    transition: background-color 0.3s ease;
+}
+
+.product-size-btn button.active {
+  background-color: #000; /* Active background color */
+  color: #fff;
+}
+
+.size-btn-box{
+  width: 50px;
+  overflow: hidden;
+}
+
+.size-btn-box input{
+  width: 50px;
+  margin-top: 5px;
+}
+
+.cart-btn {
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translatex(0); }
+  25% { transform: translatex(-8px); }
+  50% { transform: translatey(5px); }
+  75% { transform: translatex(-8px); }
+  100% { transform: translatex(0); }
+}
+
