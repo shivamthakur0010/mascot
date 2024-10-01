@@ -100,3 +100,13 @@
   100% { transform: translatex(0); }
 }
 
+.blur-image {
+  filter: blur(4px); /* Adjust the blur radius */
+  opacity: 0.6; /* Optional, adds a dimming effect */
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.blur-image:hover {
+  filter: none; /* Remove blur on hover */
+  opacity: 1;
+}
