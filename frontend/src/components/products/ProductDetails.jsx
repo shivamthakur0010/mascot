@@ -1,13 +1,11 @@
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useState , useRef , useEffect } from "react";
-import './ProductDetails.css'; 
+import { useState, useRef, useEffect } from "react";
+import "./ProductDetails.css";
 import { FaCartShopping } from "react-icons/fa6";
 
 function ProductDetails() {
-
   const [selectedSize, setSelectedSize] = useState(null); // State to track the selected button
-
 
   const products = [
     {
@@ -40,7 +38,7 @@ function ProductDetails() {
   const [currentIndex, setCurrentIndex] = useState(0); // Track the current index for auto-slideshow
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const images = [products[0].image1, products[0].image2, products[0].image3];
-  
+
   const containerRef = useRef(null);
   const imgRef = useRef(null);
   const handleMouseMove = (e) => {
@@ -64,19 +62,18 @@ function ProductDetails() {
     }
   };
 
-    // Auto-slide logic using useEffect to change the image automatically every 5 seconds
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Cycle through images
-      }, 3000); // 2 seconds interval
-  
-      return () => clearInterval(intervalId); // Clean up interval on component unmount
-    }, []);
-  
-    useEffect(() => {
-      setSelectedImage(images[currentIndex]); // Update the selected image based on currentIndex
-    }, [currentIndex, images]);
+  // Auto-slide logic using useEffect to change the image automatically every 5 seconds
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Cycle through images
+    }, 3000); // 2 seconds interval
+
+    return () => clearInterval(intervalId); // Clean up interval on component unmount
+  }, []);
+
+  useEffect(() => {
+    setSelectedImage(images[currentIndex]); // Update the selected image based on currentIndex
+  }, [currentIndex, images]);
 
   return (
     <>
@@ -137,30 +134,34 @@ function ProductDetails() {
             <h3 className="price-details">₹2,513</h3>
             <hr className="hr-line"></hr>
             <div className="product-table-content">
-            <table className="no-border-table">
-        <tbody>
-          <tr>
-            <td className="product-name">Product Code:</td>
-            <td className="product-descr">UNB-BLAZER-09</td>
-          </tr>
-          <tr>
-            <td className="product-name">(SKU)</td>
-          </tr>
-          <tr>
-            <td className="product-name">Fabric Description:</td>
-            <td className="product-descr">Polyester Viscose </td>
-          </tr>
-          <tr>
-            <td className="product-name">Dispatch Time:</td>
-            <td className="product-descr">5-6 Working Days ( T&C Apply )</td>
-          </tr>
-          <tr>
-            <td className="product-name">Model Details:</td>
-            <td className="product-descr pt-3">Model with a Height of 6, actual chest Size of 38 inches is wearing Blazer of MEDIUM size.</td>
-          </tr>
-        </tbody>
-      </table>
-
+              <table className="no-border-table">
+                <tbody>
+                  <tr>
+                    <td className="product-name">Product Code:</td>
+                    <td className="product-descr">UNB-BLAZER-09</td>
+                  </tr>
+                  <tr>
+                    <td className="product-name">(SKU)</td>
+                  </tr>
+                  <tr>
+                    <td className="product-name">Fabric Description:</td>
+                    <td className="product-descr">Polyester Viscose </td>
+                  </tr>
+                  <tr>
+                    <td className="product-name">Dispatch Time:</td>
+                    <td className="product-descr">
+                      5-6 Working Days ( T&C Apply )
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="product-name">Model Details:</td>
+                    <td className="product-descr pt-3">
+                      Model with a Height of 6, actual chest Size of 38 inches
+                      is wearing Blazer of MEDIUM size.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
             <div className="size-text mt-3">
@@ -168,49 +169,93 @@ function ProductDetails() {
             </div>
             <div className="product-size-btn rubik d-flex mt-4 gap-3">
               <div className="size-btn-box">
-                <button onClick={() => setSelectedSize('XS')}
-                  className={selectedSize === 'XS' ? 'active' : ''}>XS</button>
-              <div className="input-field"><input type="number"></input></div>
+                <button
+                  onClick={() => setSelectedSize("XS")}
+                  className={selectedSize === "XS" ? "active" : ""}
+                >
+                  XS
+                </button>
+                <div className="input-field">
+                <input type="number" className="ps-2" placeholder="0" min="0"></input>
+                </div>
               </div>
               <div className="size-btn-box">
-                <button onClick={() => setSelectedSize('S')}
-                  className={selectedSize === 'S' ? 'active' : ''}>S</button>
-              <div className="input-field"><input type="number"></input></div>
+                <button
+                  onClick={() => setSelectedSize("S")}
+                  className={selectedSize === "S" ? "active" : ""}
+                >
+                  S
+                </button>
+                <div className="input-field">
+                  <input type="number" className="ps-2" placeholder="0" min="0"></input>
+                </div>
               </div>
               <div className="size-btn-box">
-                <button onClick={() => setSelectedSize('M')}
-                  className={selectedSize === 'M' ? 'active' : ''}>M</button>
-              <div className="input-field"><input type="number"></input></div>
+                <button
+                  onClick={() => setSelectedSize("M")}
+                  className={selectedSize === "M" ? "active" : ""}
+                >
+                  M
+                </button>
+                <div className="input-field">
+                <input type="number" className="ps-2" placeholder="0" min="0"></input>
+                </div>
               </div>
               <div className="size-btn-box">
-                <button onClick={() => setSelectedSize('L')}
-                  className={selectedSize === 'L' ? 'active' : ''}>L</button>
-              <div className="input-field"><input type="number"></input></div>
+                <button
+                  onClick={() => setSelectedSize("L")}
+                  className={selectedSize === "L" ? "active" : ""}
+                >
+                  L
+                </button>
+                <div className="input-field">
+                <input type="number" className="ps-2"  placeholder="0" min="0"></input>
+                </div>
               </div>
               <div className="size-btn-box">
-                <button onClick={() => setSelectedSize('XL')}
-                  className={selectedSize === 'XL' ? 'active' : ''}>XL</button>
-              <div className="input-field"><input type="number"></input></div>
+                <button
+                  onClick={() => setSelectedSize("XL")}
+                  className={selectedSize === "XL" ? "active" : ""}
+                >
+                  XL
+                </button>
+                <div className="input-field">
+                <input type="number" className="ps-2"  placeholder="0" min="0"></input>
+                </div>
               </div>
               <div className="size-btn-box">
-                <button onClick={() => setSelectedSize('2XL')}
-                  className={selectedSize === '2XL' ? 'active' : ''}>2XL</button>
-              <div className="input-field"><input type="number"></input></div>
+                <button
+                  onClick={() => setSelectedSize("2XL")}
+                  className={selectedSize === "2XL" ? "active" : ""}
+                >
+                  2XL
+                </button>
+                <div className="input-field">
+                <input type="number" className="ps-2"  placeholder="0" min="0"></input>
+                </div>
               </div>
               <div className="size-btn-box">
-                <button onClick={() => setSelectedSize('3XL')}
-                  className={selectedSize === '3XL' ? 'active' : ''}>3XL</button>
-              <div className="input-field"><input type="number"></input></div>
+                <button
+                  onClick={() => setSelectedSize("3XL")}
+                  className={selectedSize === "3XL" ? "active" : ""}
+                >
+                  3XL
+                </button>
+                <div className="input-field">
+                <input type="number" className="ps-2" placeholder="0" min="0"></input>
+                </div>
               </div>
-             
             </div>
 
             <div className="mt-4 mb-3">
-              <button className="btn-main josefin ms-2 slide-in-bottom d-flex">
-                <div className="cart-btn pe-2"><FaCartShopping /></div>Add To Cart</button>
+              <button className="btn-main josefin ms-2   d-flex">
+                <div className="cart-btn pe-2">
+                  <FaCartShopping />
+                </div>
+                Add To Cart
+              </button>
             </div>
             <hr className="hr-line"></hr>
-
           </div>
         </div>
       </div>

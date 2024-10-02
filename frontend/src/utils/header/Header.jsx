@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Header.css'; // Custom CSS for multi-level dropdown
+import { useState, useEffect } from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Header.css"; // Custom CSS for multi-level dropdown
 import { CiShoppingCart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -18,8 +18,8 @@ function Header() {
   useEffect(() => {
     // Detect screen width change
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Handle submenus (both first and second level)
@@ -60,7 +60,7 @@ function Header() {
       className="bg-body-tertiary sticky-top navbar"
       expanded={navbarExpanded}
       onToggle={() => setNavbarExpanded(!navbarExpanded)}
-      style={{ zIndex: 1000 }} 
+      style={{ zIndex: 1000 }}
     >
       <Container>
         <Navbar.Brand as={Link} to="/" onClick={handleNavClick}>
@@ -74,96 +74,739 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {/* Corporate Menu */}
-            <div className={`dropdown ${subMenuOpen['corporate'] ? 'show' : ''}`}>
+            <div
+              className={`dropdown ${subMenuOpen["corporate"] ? "show" : ""}`}
+            >
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
-                onClick={(e) => handleFirstLevelMenuClick(e, 'corporate')}
+                onClick={(e) => handleFirstLevelMenuClick(e, "corporate")}
               >
                 Corporate
               </a>
               <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/products" onClick={handleNavClick}>
-                    HTML
-                  </Link>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#" onClick={handleNavClick}>
-                    CSS
-                  </a>
-                </li>
-                <li className={`dropdown-submenu ${subMenuOpen['corporateSubmenu'] ? 'show' : ''}`}>
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["corporateSubmenu1"] ? "show" : ""
+                  }`}
+                >
                   <a
                     className="dropdown-item dropdown-toggle"
                     href="#"
-                    onClick={(e) => handleSubMenuClick(e, 'corporateSubmenu')}
+                    onClick={(e) => handleSubMenuClick(e, "corporateSubmenu1")}
                   >
-                    New dropdown
+                    Corporate
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#" onClick={handleNavClick}>
-                        2nd level dropdown
-                      </a>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Corporate Blazers
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#" onClick={handleNavClick}>
-                        2nd level dropdown
-                      </a>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Corporate Female Dress
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Corporate Female Kurti
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Corporate Female top
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Corporate Shirt
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Corporate T-shirt
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Corporate Trouser
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Corporate Vest
+                      </Link>
                     </li>
                   </ul>
                 </li>
+
+                {/* =====hotel submenu STARTS=== */}
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["hotelSubmenu1"] ? "show" : ""
+                  }`}
+                >
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    onClick={(e) => handleSubMenuClick(e, "hotelSubmenu1")}
+                  >
+                    Hotel
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Aprons
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Badana
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Bed Sheet
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Chef Coats
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Chef Trousers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Accessories
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Waiter Shirt
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Waiter Vest
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Waiter Trouser
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Scaf
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Hotel Cap
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* =====hotel submenu ENDS=== */}
+
+                {/* =====hospital submenu STARTS=== */}
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["hospitalSubmenu"] ? "show" : ""
+                  }`}
+                >
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    onClick={(e) => handleSubMenuClick(e, "hospitalSubmenu")}
+                  >
+                    Hospital
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Doctors Lab Coat
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Nurse & Ward Boy Tunic
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Nurse & Ward Boy Trouser
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Patient Uniform
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Ot Uniform
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* =====hospital submenu ends=== */}
+
+                {/* =====spa submenu STARTS=== */}
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["spaSubmenu"] ? "show" : ""
+                  }`}
+                >
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    onClick={(e) => handleSubMenuClick(e, "spaSubmenu")}
+                  >
+                    Spa & Saloon
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Blazers / Jackets
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Salon Dress
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Salon Gown
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Female Kurti
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Apron
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        T-shirt
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Trouser
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* =====spa submenu ENDS=== */}
+
+                {/* =====Industrial submenu STARTS=== */}
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["IndustrialSubmenu"] ? "show" : ""
+                  }`}
+                >
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    onClick={(e) => handleSubMenuClick(e, "IndustrialSubmenu")}
+                  >
+                    Industrial
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Dungarees Coverall
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Vest Jacket
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Shirts
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        T-Shirts
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Trouser
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* =====Industrial submenu ENDS=== */}
+              
+                {/* =====Automobiles submenu STARTS=== */}
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["AutomobilesSubmenu"] ? "show" : ""
+                  }`}
+                >
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    onClick={(e) => handleSubMenuClick(e, "AutomobilesSubmenu")}
+                  >
+                    Automobiles
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Staff-Dress
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Vest Jacket
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Shirts
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        T-Shirts
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Trouser
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* =====Automobiles submenu ENDS=== */}
+
+
+                {/* =====Security submenu STARTS=== */}
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["SecuritySubmenu"] ? "show" : ""
+                  }`}
+                >
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    onClick={(e) => handleSubMenuClick(e, "SecuritySubmenu")}
+                  >
+                    Security
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Uniform
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Vest Jacket
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Shirts
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        T-Shirts
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Trouser
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* =====Security submenu ENDS=== */}
+
+                {/* =====Profession submenu STARTS=== */}
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["ProfessionSubmenu"] ? "show" : ""
+                  }`}
+                >
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    onClick={(e) => handleSubMenuClick(e, "ProfessionSubmenu")}
+                  >
+                  By Profession
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Air Hostess Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Business Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Bell Boy & Door Man Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        onClick={handleNavClick}
+                      >
+                        Driver Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Gym Staff Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Day Care Staff Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Events Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Sports Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Super Market Uniforms
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/"
+                        onClick={handleNavClick}
+                      >
+                        Teachers Uniforms
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* =====Profession submenu ENDS=== */}
+
+
               </ul>
             </div>
 
             {/* Schools Menu */}
-            <div className={`dropdown ${subMenuOpen['schools'] ? 'show' : ''}`}>
+            <div className={`dropdown ${subMenuOpen["schools"] ? "show" : ""}`}>
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
-                onClick={(e) => handleFirstLevelMenuClick(e, 'schools')}
+                onClick={(e) => handleFirstLevelMenuClick(e, "schools")}
               >
                 Schools
               </a>
               <ul className="dropdown-menu">
-                <li className={`dropdown-submenu ${subMenuOpen['schoolsSubmenu1'] ? 'show' : ''}`}>
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["schoolsSubmenu1"] ? "show" : ""
+                  }`}
+                >
                   <a
                     className="dropdown-item dropdown-toggle"
                     href="#"
-                    onClick={(e) => handleSubMenuClick(e, 'schoolsSubmenu1')}
+                    onClick={(e) => handleSubMenuClick(e, "schoolsSubmenu1")}
                   >
                     New dropdown
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#" onClick={handleNavClick}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        onClick={handleNavClick}
+                      >
                         2nd level dropdown
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#" onClick={handleNavClick}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        onClick={handleNavClick}
+                      >
                         2nd level dropdown
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li className={`dropdown-submenu ${subMenuOpen['schoolsSubmenu2'] ? 'show' : ''}`}>
+                <li
+                  className={`dropdown-submenu ${
+                    subMenuOpen["schoolsSubmenu2"] ? "show" : ""
+                  }`}
+                >
                   <a
                     className="dropdown-item dropdown-toggle"
                     href="#"
-                    onClick={(e) => handleSubMenuClick(e, 'schoolsSubmenu2')}
+                    onClick={(e) => handleSubMenuClick(e, "schoolsSubmenu2")}
                   >
                     Another dropdown
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#" onClick={handleNavClick}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        onClick={handleNavClick}
+                      >
                         2nd level dropdown
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#" onClick={handleNavClick}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        onClick={handleNavClick}
+                      >
                         2nd level dropdown
                       </a>
                     </li>
@@ -181,22 +824,30 @@ function Header() {
             </Nav.Link>
 
             {/* Pages Menu */}
-            <div className={`dropdown ${subMenuOpen['pages'] ? 'show' : ''}`}>
+            <div className={`dropdown ${subMenuOpen["pages"] ? "show" : ""}`}>
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
-                onClick={(e) => handleFirstLevelMenuClick(e, 'pages')}
+                onClick={(e) => handleFirstLevelMenuClick(e, "pages")}
               >
                 Pages
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/faq" onClick={handleNavClick}>
+                  <Link
+                    className="dropdown-item"
+                    to="/faq"
+                    onClick={handleNavClick}
+                  >
                     FAQs
                   </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#" onClick={handleNavClick}>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
                     Terms & Conditions
                   </a>
                 </li>
@@ -204,20 +855,19 @@ function Header() {
             </div>
           </Nav>
           <div className="ms-auto d-none d-lg-flex align-items-center gap-3">
-  <a href="#" className="nav-icon" aria-label="Search">
-    <CiSearch />
-  </a>
-  <a href="#" className="nav-icon " aria-label="User">
-    <CiUser />
-  </a>
-  <a href="#" className="nav-icon " aria-label="Favorites">
-    <CiHeart />
-  </a>
-  <a href="#" className="nav-icon" aria-label="Cart">
-    <CiShoppingCart />
-  </a>
-</div>
-
+            <a href="#" className="nav-icon" aria-label="Search">
+              <CiSearch />
+            </a>
+            <a href="#" className="nav-icon " aria-label="User">
+              <CiUser />
+            </a>
+            <a href="#" className="nav-icon " aria-label="Favorites">
+              <CiHeart />
+            </a>
+            <a href="#" className="nav-icon" aria-label="Cart">
+              <CiShoppingCart />
+            </a>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

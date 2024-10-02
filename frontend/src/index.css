@@ -73,6 +73,7 @@
   background: var(--hover-color); 
   color: var(--text-color);  
 }
+
 .dropdown-item:active{
   background-color: transparent !important;
   color: #000;

@@ -78,7 +78,7 @@ function ThreeColSection() {
               </p>
             </div>
             <div className="col-lg-4  mt-3 px-5">
-              <h3 className="three-col-heading text-center">Country wide Dispatch</h3>
+              <h3 className="three-col-heading text-center">Wide Dispatch</h3>
               <p className="text-muted f-14  text-center">
               Fastest Uniform Supplier for you on your behalf, we will dispatch the uniforms to your Pan-India offices, Zonal, Regional, and Area-Wise, so that you can focus on more important aspects of your business.
               </p>
