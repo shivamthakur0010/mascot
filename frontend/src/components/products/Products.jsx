@@ -62,8 +62,8 @@ function Products() {
                   />
                 </div>
 
-                <div className="product-name pt-2">
-                  <h4 className="rubik text-center p-3"
+                <div className=" pt-2">
+                  <h4 className="rubik text-center ps-2 py-3"
                     style={{
                         whiteSpace: "nowrap",
                         overflow: "hidden",

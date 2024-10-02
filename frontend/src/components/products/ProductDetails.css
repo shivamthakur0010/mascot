@@ -81,7 +81,7 @@
 
 .size-btn-box input{
   width: 50px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .cart-btn {
@@ -110,3 +110,4 @@
   filter: none; /* Remove blur on hover */
   opacity: 1;
 }
+
