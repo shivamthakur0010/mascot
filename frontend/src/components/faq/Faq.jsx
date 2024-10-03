@@ -30,49 +30,49 @@ function Faq() {
       <div className="container accord-box">
       <Accordion>
       <Accordion.Item eventKey="0">
-        <Accordion.Header><IoIosArrowDown />What time can we access our room ?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>What time can we access our room ?</Accordion.Header>
         <Accordion.Body>
          Arrival time is 3:00. If you arrive earlier do not hesitate to drop off your luggage at the hotel; it will be our pleasure to keep it if you wish to begin your exploration of the city.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header><IoIosArrowDown />What time should we leave our room?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>What time should we leave our room?</Accordion.Header>
         <Accordion.Body>
         Departure time is 11:00. If you want to stay longer in town, you can let your luggage in our storage.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header><IoIosArrowDown />What time can we access our room ?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>What time can we access our room ?</Accordion.Header>
         <Accordion.Body>
          Arrival time is 3:00. If you arrive earlier do not hesitate to drop off your luggage at the hotel; it will be our pleasure to keep it if you wish to begin your exploration of the city.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
-        <Accordion.Header><IoIosArrowDown />Does the hotel have a Wi-Fi network ?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>Does the hotel have a Wi-Fi network ?</Accordion.Header>
         <Accordion.Body>
         The hotel offers free Wi-Fi in all rooms, as well as in the common areas. You willl receive the access code upon your arrival.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4">
-        <Accordion.Header><IoIosArrowDown />Is there an elevator in the hotel ?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>Is there an elevator in the hotel ?</Accordion.Header>
         <Accordion.Body>
         The hotel does not have an elevator but if you need somme assistance, we will take your luggage to your room.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="5">
-        <Accordion.Header><IoIosArrowDown />Is there a workspace in the bedrooms ?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>Is there a workspace in the bedrooms ?</Accordion.Header>
         <Accordion.Body>
         Departure time is 11:00. If you want to stay longer in town, you can let your luggage in our storage.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="6">
-        <Accordion.Header><IoIosArrowDown />Where can we park our car ?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>Where can we park our car ?</Accordion.Header>
         <Accordion.Body>
          Arrival time is 3:00. If you arrive earlier do not hesitate to drop off your luggage at the hotel; it will be our pleasure to keep it if you wish to begin your exploration of the city.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="7">
-        <Accordion.Header><IoIosArrowDown />Can we bring our pet ?</Accordion.Header>
+        <Accordion.Header><div className="pe-2"><IoIosArrowDown /></div>Can we bring our pet ?</Accordion.Header>
         <Accordion.Body>
         Departure time is 11:00. If you want to stay longer in town, you can let your luggage in our storage.
         </Accordion.Body>
