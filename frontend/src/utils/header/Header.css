@@ -12,6 +12,7 @@
     left: 100%;
     margin-top: -5px;
   }
+
   
   /* Show dropdown on hover for large screens */
   @media (min-width: 992px) {
