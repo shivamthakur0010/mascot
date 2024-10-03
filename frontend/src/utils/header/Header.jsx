@@ -4,10 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css"; // Custom CSS for multi-level dropdown
-import { CiShoppingCart } from "react-icons/ci";
-import { CiSearch } from "react-icons/ci";
-import { CiUser } from "react-icons/ci";
-import { CiHeart } from "react-icons/ci";
+import { CiShoppingCart, CiSearch, CiUser, CiHeart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -53,7 +50,6 @@ function Header() {
       }
     });
   };
-
   return (
     <Navbar
       expand="lg"
@@ -745,72 +741,176 @@ function Header() {
               >
                 Schools
               </a>
-              <ul className="dropdown-menu">
-                <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["schoolsSubmenu1"] ? "show" : ""
-                  }`}
-                >
+              <ul className="dropdown-menu" id="school-menu">
+                <li>
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item"
                     href="#"
-                    onClick={(e) => handleSubMenuClick(e, "schoolsSubmenu1")}
+                    onClick={handleNavClick}
                   >
-                    New dropdown
+                    AKSIPS
                   </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={handleNavClick}
-                      >
-                        2nd level dropdown
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={handleNavClick}
-                      >
-                        2nd level dropdown
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["schoolsSubmenu2"] ? "show" : ""
-                  }`}
-                >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item"
                     href="#"
-                    onClick={(e) => handleSubMenuClick(e, "schoolsSubmenu2")}
+                    onClick={handleNavClick}
                   >
-                    Another dropdown
+                    Shri Guru Harkrishan Model School
                   </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={handleNavClick}
-                      >
-                        2nd level dropdown
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={handleNavClick}
-                      >
-                        2nd level dropdown
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Oakridge International School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Millennium
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    YPS
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Gurukul International School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Vivek International School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Rayat Bahra International School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Gillco International School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    SGGS Sr. Sec School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    DAV
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Stepping Stones
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Cambridge
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Paragon-69
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    DPS
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Shivalik
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Tiny Tots
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Sunshine
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Kundan International School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Sri AuroBindo
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    The Tribune School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Banyan Tree
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Angel World School
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleNavClick}
+                  >
+                    Gian Jyoti International School
+                  </a>
                 </li>
               </ul>
             </div>
