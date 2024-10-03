@@ -4,10 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css"; // Custom CSS for multi-level dropdown
-import { CiShoppingCart } from "react-icons/ci";
-import { CiSearch } from "react-icons/ci";
-import { CiUser } from "react-icons/ci";
-import { CiHeart } from "react-icons/ci";
+import { CiShoppingCart, CiSearch, CiUser, CiHeart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -53,7 +50,6 @@ function Header() {
       }
     });
   };
-
   return (
     <Navbar
       expand="lg"
@@ -745,7 +741,7 @@ function Header() {
               >
                 Schools
               </a>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu" id="school-menu">
                 <li>
                   <a
                     className="dropdown-item"
