@@ -1,0 +1,96 @@
+
+
+/* faq title design */
+
+.faq-title-head {
+    text-align: center;
+}
+
+.faq-title-head h1{
+font-size: 4em;
+text-align: center;
+margin: 50px;
+font-weight: normal;
+position: relative;
+color: hsl(42.86, 10%, 26%);
+}
+
+.faq-title-head h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: hsl(42.86, 10%, 26%);
+    margin: 0 auto;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+
+/*content design*/
+
+.faq-content-wrap {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.faq-content-wrap .the-content{
+    color: #738078;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Customizing the Accordion Header */
+.accordion-button {
+    background-color: #fff; 
+    color: hsl(42.86, 10%, 26%); 
+    font-size: 18px; 
+    font-weight: 600;
+    padding: 15px 20px;
+    border: none; 
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    color: #ff9999;
+}
+
+.accordion-button:focus {
+    box-shadow: none; 
+}
+
+/* Customizing the Accordion Header Icon */
+.accordion-button::after {
+    font-size: 16px; 
+    color: #333; 
+}
+
+/* Customizing Accordion Body */
+.accordion-body {
+    background-color: #fff; 
+    font-size: 16px; 
+    padding: 20px; 
+    color: #ff9999; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+}
+
+/* Customizing Accordion Item */
+.accordion-item {
+    border: none; 
+    margin-bottom: 20px; 
+}
+
+.accordion-button:not(.collapsed){
+    background: #ff9999;
+    color:#fff;
+    box-shadow: none;
+}
+
+.accord-box {
+    width: 100%;
+    max-width: 80%;
+}
