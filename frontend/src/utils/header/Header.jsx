@@ -624,6 +624,7 @@ function Header() {
 
                 {/* =====Profession submenu STARTS=== */}
                 <li
+                id="school-menu "
                   className={`dropdown-submenu ${
                     subMenuOpen["ProfessionSubmenu"] ? "show" : ""
                   }`}
