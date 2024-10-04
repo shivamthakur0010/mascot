@@ -84,7 +84,7 @@
 }
 
 .dropdown-item:hover {
-    color: #ff9999;
+    color: var(--primary-color);
 }
 
 .counter-icon{

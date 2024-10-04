@@ -7,6 +7,8 @@ import "./Header.css"; // Custom CSS for multi-level dropdown
 import { CiShoppingCart, CiSearch, CiUser, CiHeart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import logo from '/mascot.png';
+import { RiArrowDropRightFill } from "react-icons/ri";
+
 function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [subMenuOpen, setSubMenuOpen] = useState({});
@@ -87,11 +89,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "corporateSubmenu1")}
                   >
-                    Corporate
+                    Corporate<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -176,11 +178,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "hotelSubmenu1")}
                   >
-                    Hotel
+                    Hotel<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -293,11 +295,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "hospitalSubmenu")}
                   >
-                    Hospital
+                    Hospital<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -356,11 +358,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "spaSubmenu")}
                   >
-                    Spa & Saloon
+                    Spa & Saloon<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -437,11 +439,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "IndustrialSubmenu")}
                   >
-                    Industrial
+                    Industrial<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -500,11 +502,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "AutomobilesSubmenu")}
                   >
-                    Automobiles
+                    Automobiles<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -564,11 +566,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "SecuritySubmenu")}
                   >
-                    Security
+                    Security<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -627,11 +629,11 @@ function Header() {
                   }`}
                 >
                   <a
-                    className="dropdown-item dropdown-toggle"
+                    className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "ProfessionSubmenu")}
                   >
-                  By Profession
+                  By Profession<RiArrowDropRightFill />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
