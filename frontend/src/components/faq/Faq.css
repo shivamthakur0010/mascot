@@ -12,7 +12,7 @@ text-align: center;
 margin: 50px;
 font-weight: normal;
 position: relative;
-color: hsl(42.86, 10%, 26%);
+color: var(--primary-color);
 }
 
 .faq-title-head h1::after {
