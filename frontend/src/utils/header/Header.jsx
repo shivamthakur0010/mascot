@@ -84,9 +84,8 @@ function Header() {
               </a>
               <ul className="dropdown-menu">
                 <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["corporateSubmenu1"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["corporateSubmenu1"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
@@ -173,9 +172,8 @@ function Header() {
 
                 {/* =====hotel submenu STARTS=== */}
                 <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["hotelSubmenu1"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["hotelSubmenu1"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
@@ -290,9 +288,8 @@ function Header() {
 
                 {/* =====hospital submenu STARTS=== */}
                 <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["hospitalSubmenu"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["hospitalSubmenu"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
@@ -353,9 +350,8 @@ function Header() {
 
                 {/* =====spa submenu STARTS=== */}
                 <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["spaSubmenu"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["spaSubmenu"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
@@ -434,9 +430,8 @@ function Header() {
 
                 {/* =====Industrial submenu STARTS=== */}
                 <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["IndustrialSubmenu"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["IndustrialSubmenu"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
@@ -494,12 +489,11 @@ function Header() {
                   </ul>
                 </li>
                 {/* =====Industrial submenu ENDS=== */}
-              
+
                 {/* =====Automobiles submenu STARTS=== */}
                 <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["AutomobilesSubmenu"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["AutomobilesSubmenu"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
@@ -561,9 +555,8 @@ function Header() {
 
                 {/* =====Security submenu STARTS=== */}
                 <li
-                  className={`dropdown-submenu ${
-                    subMenuOpen["SecuritySubmenu"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["SecuritySubmenu"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
@@ -624,19 +617,18 @@ function Header() {
 
                 {/* =====Profession submenu STARTS=== */}
                 <li
-                id="school-menu "
-                  className={`dropdown-submenu ${
-                    subMenuOpen["ProfessionSubmenu"] ? "show" : ""
-                  }`}
+                  className={`dropdown-submenu ${subMenuOpen["ProfessionSubmenu"] ? "show" : ""
+                    }`}
                 >
                   <a
                     className="dropdown-item dropdown"
                     href="#"
                     onClick={(e) => handleSubMenuClick(e, "ProfessionSubmenu")}
                   >
-                  By Profession<RiArrowDropRightFill />
+                    By Profession<RiArrowDropRightFill />
                   </a>
-                  <ul className="dropdown-menu">
+                  <ul className="dropdown-menu"
+                    id="profession-menu">
                     <li>
                       <Link
                         className="dropdown-item"

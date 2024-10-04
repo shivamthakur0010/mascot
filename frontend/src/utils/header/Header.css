@@ -93,3 +93,11 @@ body.overflow-hidden {
   scrollbar-color: auto; /* Firefox */
 }
 
+
+#profession-menu{
+  height: 30vh !important;
+  overflow-y: scroll !important; /* Ensures vertical scrolling */
+  scrollbar-width: auto; /* Firefox */
+  scrollbar-color: auto; /* Firefox */
+}
+
