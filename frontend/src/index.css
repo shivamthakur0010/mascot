@@ -78,6 +78,15 @@
   background-color: transparent !important;
   color: #000;
 }
+
+.dropdown-item {
+  transition: all 0.3s ease-out;
+}
+
+.dropdown-item:hover {
+    color: #ff9999;
+}
+
 .counter-icon{
   color: var(--primary-color); 
   font-size: 75px;
