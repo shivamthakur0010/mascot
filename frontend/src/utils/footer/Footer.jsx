@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import { FaLocationPin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
+import logo from '/mascot-footer.png';
 
 function Footer() {
   return (
@@ -16,17 +17,18 @@ function Footer() {
       <div className="container">
       <div className="row justify-content-between">
      <div className="col-lg-4 mt-3">
-     <img src="https://mitishasoftech.in/assets/ms-logo-B6hFIm6h.png" alt="LUXURY " className='logo-nav' />
+     <img src={logo} alt="LUXURY " className='footer-logo' />
     
       <p className="mt-3 josefin text-dark f-18 ">
      <div className="d-flex gap-3">
-        <div className="icon text-muted">
+        <div className="icon text-muted d-flex align-items-center">
         <FaLocationPin  size={24}/>
         </div>
         <p className="f-16 text-muted">
-        First Floor, F426, Phase 8B <br />
-        Industrial Area, Sector 91, <br />
-        S.A.S  Nagar, Punjab 160055
+        SCO 90, Sector 35-C, <strong>Chandigarh</strong> <br />
+       <div className="mt-3">
+       SCF 60, Near Bassi Theatre, Phase 2, <strong>Mohali</strong><br />
+       </div>
         </p>
      </div>
 
@@ -35,7 +37,7 @@ function Footer() {
         <IoMail  size={24}/>
         </div>
         <p className="f-16 text-muted">
-        info@mitishasoftech.in
+        thinkmascot@gmail.com
         </p>
      </div>
 

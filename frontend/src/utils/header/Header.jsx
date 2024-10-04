@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css"; // Custom CSS for multi-level dropdown
 import { CiShoppingCart, CiSearch, CiUser, CiHeart } from "react-icons/ci";
 import { Link } from "react-router-dom";
-
+import logo from '/mascot.png';
 function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [subMenuOpen, setSubMenuOpen] = useState({});
@@ -61,7 +61,7 @@ function Header() {
       <Container>
         <Navbar.Brand as={Link} to="/" onClick={handleNavClick}>
           <img
-            src="https://mitishasoftech.in/assets/ms-logo-B6hFIm6h.png"
+            src={logo}
             alt="mitisha logo"
             className="logo-nav"
           />

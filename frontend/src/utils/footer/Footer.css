@@ -31,3 +31,9 @@
 .newsletter-btn{
     padding: 3px 0px !important;
 }
+
+.footer-logo{
+    width: 140px;
+    height: auto;
+    margin-bottom: 20px;
+}
