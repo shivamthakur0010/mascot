@@ -5,8 +5,9 @@ import Form from "../form/Form";
 function About() {
   return (
     <>
-      <div className="container-fluid bg-breadcrum py-auto">
-        <h1 className="breadcrum text-center pt-3 display-6 lh-1 rubik">
+      <div className="container-fluid bg-breadcrum py-auto header">
+       <div className="header__background">
+       <h1 className="breadcrum text-center pt-3 display-6 lh-1 rubik">
           About Us
         </h1>
         <div className="container">
@@ -17,6 +18,7 @@ function About() {
             / <span className="text-muted f-14 fw-bolder">About us</span>{" "}
           </p>
         </div>
+       </div>
       </div>
 
       <div className="container mt-4">
