@@ -2,7 +2,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+
 function Client() {
+    const groupImages = (clients, groupSize) => {
+        let groupedClients = [];
+        for (let i = 0; i < clients.length; i += groupSize) {
+            groupedClients.push(clients.slice(i, i + groupSize));
+        }
+        return groupedClients;
+    };
     const Clients = [
         {
            image :'https://araglobalinc.com/wp-content/uploads/2021/09/2017-logo-Tata-Motors.jpg'
@@ -95,33 +104,39 @@ function Client() {
             },
         ],
     };
-
+    const groupedClients = groupImages(Clients, 3);
     return (
         <>
-            <div className="container my-5 pt-lg-3">
-                <h2 className="satisfy text-center text-theme display-5">Trusted by great teams</h2>
-                <div className="container Client-container mt-3 p-4 py-5">
-                    <Slider {...settings}>
-                        {Clients.map((Client, index) => (
-                            <div key={index} className="Client-slide p-4" style={{ textAlign: 'center' }}>
-                               <div> <img
-                                    src={Client.image}
-                                    alt="Client"
-                                    style={{
-                                        width: '100%',
-                                        height: '300px', // Adjust height as needed
-                                        objectFit: 'contain', // Keeps the image proportional
-                                    }}
-                                /></div>
+        <div className="container my-5 pt-lg-3">
+            <h2 className="satisfy text-center text-theme display-5">Trusted by great teams</h2>
+            <div className="container Client-container mt-3 p-4 py-5">
+                <Slider {...settings}>
+                    {groupedClients.map((group, index) => (
+                        <div key={index} className="Client-slide p-4" style={{ textAlign: 'center' }}>
+                            <div className="row">
+                                {group.map((Client, i) => (
+                                    <div key={i} className="col-12 mb-4">
+                                        <img
+                                            src={Client.image}
+                                            alt="Client"
+                                            style={{
+                                                width: '100%',
+                                                height: '150px', // Adjust height for each image
+                                                objectFit: 'contain',
+                                            }}
+                                        />
+                                    </div>
+                                ))}
                             </div>
-                        ))}
-                    </Slider>
-                    <p className="text-muted fst-italic text-center">
+                        </div>
+                    ))}
+                </Slider>
+                <p className="text-muted fst-italic text-center">
                     All Brands/Logos are sole properties of their respective owners. Logos are for representative purpose only.
-                    </p>
-                </div>
+                </p>
             </div>
-        </>
+        </div>
+    </>
     );
 }
 
