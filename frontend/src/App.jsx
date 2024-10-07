@@ -8,11 +8,13 @@ import Login from './account/login/Login.jsx';
 import Faq from './components/faq/Faq.jsx';
 import Products from './components/products/Products.jsx';
 import ProductDetails from './components/products/ProductDetails.jsx';
+import ScrollToTop from './utils/ScrollToTo.JSX';
 function App() {
 
   return (
     <>
   <Router>
+    <ScrollToTop/>
     <Routes>
     <Route path="/" element={<Layout/>}>
     <Route index element={<Home/>} />
