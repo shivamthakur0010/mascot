@@ -26,7 +26,7 @@ function Contact() {
       <div className="container mt-4">
         <div className="row mb-5 mt-3">
           <div className="col-lg-7 col-md-7 px-4 py-4">
-          <div className="title title1 title-effect mb-1 title-left w-25">
+          <div className="title title1 title-effect mb-1 title-left w-30">
             <h2 className="rubik ">Contact Us</h2>
             </div>
 
