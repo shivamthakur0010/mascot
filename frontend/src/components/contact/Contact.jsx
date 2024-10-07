@@ -35,7 +35,6 @@ function Contact() {
           </div>
           <div className="col-lg-4 col-md-4 p-4 rubik bg-blue">
            <h3>Contact Information</h3>
-           <h6 className="text-muted f-14">UniformBucket (A Unit of JAF Enterprises Pvt. Ltd.)</h6>
            <div className="mt-4">
             <div className="d-flex  gap-3">
                 <div className="">
@@ -45,9 +44,9 @@ function Contact() {
                 </div>
                 <div>
                 <h6 className="rubik">Factory:</h6>
-                <p className="f-16 text-muted">First Floor, F426, Phase 8B <br /> Industrial Area, Sector 91, <br /> New Delhi, India</p>
+                <p className="f-16 text-muted">Showroom No. 1032,<br />Near Gopal Sweets, Sector 125 Mohali,New Sunny Enclave,</p>
                 <h6 className="rubik">Marketing Office:</h6>
-                <p className="f-16 text-muted">First Floor, F426, Phase 8B <br /> Industrial Area, Sector 91, <br /> New Delhi, India</p>
+                <p className="f-16 text-muted">SCF 60 <br /> Near Bassi Theatre, <br /> Phase 2, Mohali</p>
                 </div>
             </div>
 
@@ -59,8 +58,8 @@ function Contact() {
                 </div>
                 <div>
                 <h6 className="rubik">Phone Number :</h6>
-                <div className="f-16 text-muted">77079-34521 </div>
-                <div className="f-16 text-muted">77079-34521 </div>
+                <div className="f-16 text-muted">12345-67891 </div>
+                <div className="f-16 text-muted">12345-67891 </div>
                 </div>
             </div>
 
@@ -72,7 +71,7 @@ function Contact() {
                 </div>
                 <div>
                 <h6 className="rubik">Email Address :</h6>
-                <p className="f-16 text-muted">info@mitishasoftech.in </p>
+                <p className="f-16 text-muted">thinkmascot@gmail.com </p>
                 </div>
             </div>
 

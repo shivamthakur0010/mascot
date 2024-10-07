@@ -25,12 +25,12 @@ function About() {
         <div className="row d-flex justify-content-evenly">
           <div className="col-lg-7 col-md-7 px-3">
             <img
-              src="https://www.uniformbucket.com/img/page/92860_1713175438.jpg"
+              src="https://png.pngtree.com/thumb_back/fw800/background/20240720/pngtree-tailor-works-with-a-pattern-in-the-workshop-image_15902635.jpg"
               alt="about us"
               className="img-fluid"
             />
             <p className="f-14 rubik mt-2">
-            Mascot is dealing with designing and fabrication of cotton rich uniform since the last 12 years, with quality material at a reasonable price. We ensure to provide skin friendly products and natural fiber rich fabric. Using fiber dyed fabric of only reputed mills like S.Kumar, Arvind-Mafatlal, Raymond, Valji, Bombay dyeing, Modella and JCT has helped us to maintain our quality standards. Being an ISO certified company; we don't cut corners when it comes to the quality of production for our products.
+            <strong className="m-design dancing-script">M</strong>ascot is dealing with designing and fabrication of cotton rich uniform since the last 12 years, with quality material at a reasonable price. We ensure to provide skin friendly products and natural fiber rich fabric. Using fiber dyed fabric of only reputed mills like S.Kumar, Arvind-Mafatlal, Raymond, Valji, Bombay dyeing, Modella and JCT has helped us to maintain our quality standards. Being an ISO certified company; we don't cut corners when it comes to the quality of production for our products.
 
             </p>
             <p className="f-14 rubik">
@@ -50,7 +50,7 @@ function About() {
           </div>
           <div className="col-lg-4 col-md-4 p-4  bg-blue">
             <div className="title title1 title-effect mb-1 title-left">
-            <h2 className="rubik f-22">PLEASE FILL THE FORM & CONTACT US FOR ANY QUERY, WILL GET BACK TO YOU!</h2>
+            <h2 className="rubik f-22">CONTACT US FOR ANY INQUIRY</h2>
             </div>
 
             <p className="text-muted f-14 mt-2 ">Your email address will not be published. Required fields are marked *</p>
@@ -75,7 +75,9 @@ function About() {
           </div>
         </div>
       </div>
-
+      <div className="d-flex justify-content-center">
+      <hr className="custom-hr w-50" />     
+      </div>     
       <div className="factor-list rubik">
           <h2>The differentiating factors that set us aside from the competition are:</h2>
           <ul>
@@ -86,6 +88,9 @@ function About() {
             <li>Imported Machine Based Setup</li>
           </ul>
           </div>
+          <div className="d-flex justify-content-center">
+      <hr className="custom-hr w-50" />     
+      </div>
     </>
   );
 }

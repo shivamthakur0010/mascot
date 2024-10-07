@@ -46,7 +46,7 @@ function Footer() {
         <IoIosCall  size={24}/>
         </div>
         <p className="f-16 text-muted">
-        77079-34521 | 9465-654521
+        12345-67891 | 12345-67891
         </p>
      </div>
 
@@ -73,8 +73,9 @@ function Footer() {
       </div>
      </div>
 
-     <div className="col-lg-4  mt-3 ">
-     <h3 className="cormorant lh-1  fw-bolder text-dark">
+     <div className="col-lg-4 d-flex align-items-center mt-3 ">
+ <div className="">
+ <h3 className="cormorant lh-1  fw-bolder text-dark">
      Let’s stay in touch
      </h3>
 
@@ -92,7 +93,7 @@ function Footer() {
   </div>
 </form>
 
-     <img src="https://www.uniformbucket.com/img/ccavenueold.png" alt="payments" className='img-fluid mt-2' />
+ </div>
      </div>
 
     </div>
