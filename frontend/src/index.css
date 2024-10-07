@@ -158,6 +158,76 @@
   background-color: var(--primary-color);
   border-radius: 50px;
 }
+/* //why choose us css// */
+.title.title2 {
+  position: relative; 
+  padding-bottom: 10px;
+}
+
+.title.title2 h2{
+  font-size: 30px;
+}
+
+
+.title.title2 h2::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 40%; /* Align the line to the left */
+  width: 20%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.title.title2 h2::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 40%; /* Align the line to the left */
+  width: 5%;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+}
+
+.choose-content {
+  width: 100%;
+  text-align: center;
+}
+
+/* ===style of factor-list==== */
+
+.factor-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.factor-list h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.factor-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.factor-list li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.factor-list li::before {
+  content: "✓ "; 
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 
 .about-form-heading::after{
   left: 0;
