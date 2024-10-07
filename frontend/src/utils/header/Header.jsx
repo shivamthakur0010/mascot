@@ -938,13 +938,13 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="dropdown-item"
-                    href="#"
+                    to="/terms-condition"
                     onClick={handleNavClick}
                   >
                     Terms & Conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
