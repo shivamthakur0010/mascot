@@ -1,0 +1,18 @@
+
+
+
+.terms-box {
+    margin-top: 40px;
+}
+.terms-box h4{
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.terms-box p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 2;
+}

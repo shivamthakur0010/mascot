@@ -4,6 +4,7 @@ import Counter from './counter/Counter'
 import Testimonial from './testimonial/Testimonial'
 import Trending from './trending/Trending'
 import ThreeColSection from './threecolsection/ThreeColSection'
+import Brand from './brand/Brand'
 
 function LandingPage() {
   return (
@@ -11,6 +12,7 @@ function LandingPage() {
       <HeroSection />
       <Counter />
       <Testimonial/>
+      <Brand/>
       <Trending/>
       <ThreeColSection/>
     </>
