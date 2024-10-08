@@ -18,23 +18,26 @@ function Footer() {
       <div className="container">
       <div className="row justify-content-between">
      <div className="col-lg-4 mt-3">
-     <img src="/mascot-footer.png" alt="LUXURY " className='footer-logo' />
-    
       <p className="mt-3 josefin text-dark f-18 ">
      <div className="d-flex gap-3">
-        <div className="icon text-muted d-flex align-items-center">
-        <FaLocationPin  size={24}/>
+        <div className="icon text-theme">
+        <FaLocationPin  size={20}/>
         </div>
         <p className="f-16 text-muted">
-        SCO 90, Sector 35-C, <strong>Chandigarh</strong> <br />
-       <div className="mt-3">
-       SCF 60, Near Bassi Theatre, Phase 2, <strong>Mohali</strong><br />
-       </div>
+        SCO 90, Sector 35-C, <strong className='text-theme'>Chandigarh</strong> <br />
+        </p>
+     </div>
+     <div className="d-flex gap-3">
+        <div className="icon text-theme">
+        <FaLocationPin  size={20}/>
+        </div>
+        <p className="f-16 text-muted">
+        SCF 60, Near Bassi Theatre, Phase 2, <strong className='text-theme'>Mohali</strong><br />
         </p>
      </div>
 
      <div className="d-flex gap-3">
-        <div className="icon text-muted">
+        <div className="icon text-theme">
         <IoMail  size={24}/>
         </div>
         <p className="f-16 text-muted">
@@ -43,7 +46,7 @@ function Footer() {
      </div>
 
      <div className="d-flex gap-3">
-        <div className="icon text-muted">
+        <div className="icon text-theme">
         <IoIosCall  size={24}/>
         </div>
         <p className="f-16 text-muted">
@@ -56,22 +59,27 @@ function Footer() {
       <div className="d-flex gap-2 mt-2">
         <Link href='/'>
         <div className="social-icon-container ">
-        <FaFacebookF className='text-muted f-20'/>
+        <FaFacebookF className='text-theme f-20'/>
         </div>
         </Link>
         <Link href='/'>
         <div className="social-icon-container ">
-        <FaTwitter className='text-muted f-20'/>
+        <FaTwitter className='text-theme f-20'/>
         </div>
         </Link>
 
         <Link href='/'>
         <div className="social-icon-container ">
-        <FaInstagram className='text-muted f-20'/>
+        <FaInstagram className='text-theme f-20'/>
         </div>
         </Link>
 
       </div>
+     </div>
+     <div className="col-lg-4 mt-4">
+      <div className='d-flex justify-content-center'>
+     <img src="/mascot-footer.png" alt="LUXURY " className='footer-logo'/>
+     </div>
      </div>
 
      <div className="col-lg-4 d-flex align-items-center mt-3 ">

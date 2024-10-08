@@ -113,11 +113,11 @@ function SideBar(){
         </Link>
         <div className={`submenuwrapper ${activeTab===2 && isToggleSubmenu===true ? 'colapse':'colapsed'}`}>
         <div className='submenu'>
-            <ul>
-                <li><Link to={'/edit'}>Edit</Link></li>
-                <li><Link to={'/add'}>Add</Link></li>
-                <li><Link to={'/update'}>Update</Link></li>
-                <li><Link to={'/delete'}>Delete</Link></li>
+            <ul className='subcategories'>
+                <li className='submenu'><Link to={'/edit'}>Edit</Link></li>
+                <li className='submenu'><Link to={'/add'}>Add</Link></li>
+                <li className='submenu'><Link to={'/update'}>Update</Link></li>
+                <li className='submenu'><Link to={'/delete'}>Delete</Link></li>
             </ul>
         </div>
         </div>
