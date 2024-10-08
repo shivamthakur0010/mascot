@@ -7,8 +7,8 @@ function RegisterPage() {
   return (
     <>
       <div
-        className="container-fluid d-flex justify-content-center align-items-center bg-blue"
-        style={{ height: "80vh" }}
+        className="container-fluid d-flex justify-content-center align-items-center bg-blue py-4"
+      
       >
         <div className="container">
           <div className="row mx-auto ">
