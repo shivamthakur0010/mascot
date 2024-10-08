@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.contactus-heading {
+    font-family: "DM Sans";
+    letter-spacing: 0;
+    color: #000;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.188em;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  .contactus-subheading {
+    color: #777;
+  }
+  
+  .contactus-form-container .contactus-form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .contactus-form-group .contactus-label {
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+}
+  
+  .contactus-input, .contactus-select, .contactus-textarea {
+    border-radius: 0;
+    
+    
+  }
+ 
+
+  .contactus-input{
+    padding: 1em;
+    border-color: black;
+
+
+  }
+
+  .contactus-input-textarea{
+    padding: 1.6em;
+    border-color: black;
+
+  }
+  
+  .contactus-submit-btn {
+    width: 40%;
+    padding: 0.75rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0;
+   margin-top: 2.5em;
+  }
+  
+  .contactus-submit-btn:hover {
+    background-color: #333;
+  }
+  
+  .contactus-image {
+    max-width: 100%;
+    height: 89%;
+  }
+  
+
+
+  @media (max-width: 600px) {
+    .contactus-select{
+        width: 31%;
+    }
+
+
+    
+  .contactus-input{
+    padding: .5em;
+    border-color: black;
+
+
+  }
+  }
