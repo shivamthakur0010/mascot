@@ -1,0 +1,121 @@
+@media only screen and (min-width:320px) and (max-width:992px){
+
+  .res-hide {
+    display: none !important;
+  }
+
+  Header {
+    padding: 15px 0px;
+    height: auto;
+  }
+  Header .part1,header .part3 {
+      padding: 0px !important;
+  }
+  Header .part1 {
+    max-width: 40% !important;
+    flex: 0 0 40% !important;
+  }
+
+  Header .part1 img {
+    width: 35px !important;
+  }
+  Header .part1 span{
+    font-size: 18px;
+  }
+
+  Header.part3 {
+    max-width: 60% !important;
+    flex: 0 0 60% !important;
+    padding: 0 !important;
+  }
+  .part3 {
+    display: flex;
+    justify-content: flex-start !important;
+  }
+
+  .part3 .rounded-button {
+    width: 20px !important;
+    height: 30px !important;
+    padding: 0px !important;
+  }
+  
+  Header.rounded-button{
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .main .sidebar-wrapper {
+    width: 80% !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0px;
+    left: -100%;
+    z-index: 10000;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+.closeButton {
+  display: block !important;
+}
+
+  .main .Sidebar-box{
+    width: 100% !important;
+    position: relative !important;
+    top: 0px !important;
+    max-height: inherit !important;
+  }
+
+  .sidebar-wrapper.show {
+    left: 0px !important;
+    opacity: 1 !important;
+  }
+
+  .main .content {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .dashboard-content {
+    padding: 90px 15px !important;
+  }
+
+  .dashboardBoxWrapper {
+    white-space: nowrap !important;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block !important;
+  }
+
+  .dashboardBoxWrapper .dashboardBox{
+    display: inline-block !important;
+    margin-right: 15px !important;
+    width: 270px !important;
+    height: 160px !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .dashboardBoxWrapper::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .cardFilters h4 {
+    margin-bottom: 10px !important;
+    margin-top: 20px !important;
+  }
+
+  .topPart2 {
+    padding: 15px !important;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:575px){
+
+  Header .row{
+    margin: auto !important;
+    flex-wrap: nowrap !important;
+  }
+  
+ 
+}
